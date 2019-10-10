@@ -5,9 +5,9 @@ import com.alibaba.fastjson.JSON;
 import com.alibaba.fastjson.JSONArray;
 import com.alibaba.fastjson.JSONObject;
 import com.alibaba.fastjson.serializer.SerializerFeature;
-import org.apache.commons.lang.StringUtils;
 
 import java.util.*;
+import java.util.regex.Pattern;
 
 public class ApiJsonTool {
     /**
@@ -160,7 +160,7 @@ public class ApiJsonTool {
                     addrMap.put(object.hashCode(), pKey);
 
                     JSONArray array = new JSONArray();
-                    if (((JSONArray) object).size()>0 &&  StringUtils.isNumeric(((JSONArray) object).get(0).toString())) { //如果index位置的字符是数字  返回true
+                    if (((JSONArray) object).size()>0 &&  isInteger(((JSONArray) object).get(0).toString())) { //如果index位置的字符是数字  返回true
                         array.add(1);
                     } else if (((JSONArray) object).size()>0 &&  ((JSONArray) object).get(0) instanceof String) { //如果index位置的字符是数字  返回true
                         array.add("a");
@@ -180,6 +180,11 @@ public class ApiJsonTool {
                 }
             }
         }
+    }
+    //判断是否是数字
+    public static boolean isInteger(String str) {
+        Pattern pattern = Pattern.compile("^[-\\+]?[\\d]*$");
+        return pattern.matcher(str).matches();
     }
 
     /**
@@ -303,7 +308,7 @@ public class ApiJsonTool {
                 jsonObject.put("type", "object");
             } else if ( value instanceof JSONArray ) {
                 jsonObject.put("type", "array");
-            } else if (StringUtils.isNumeric(value.toString()) || "[1]".equals(value.toString())) { //如果index位置的字符是数字  返回true
+            } else if (isInteger(value.toString()) || "[1]".equals(value.toString())) { //如果index位置的字符是数字  返回true
                 jsonObject.put("type", "number");
                 JSONObject mock = new JSONObject();
                 mock.put("mock", "@id");
