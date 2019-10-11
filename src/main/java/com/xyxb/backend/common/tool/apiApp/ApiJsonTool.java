@@ -5,7 +5,6 @@ import com.alibaba.fastjson.JSON;
 import com.alibaba.fastjson.JSONArray;
 import com.alibaba.fastjson.JSONObject;
 import com.alibaba.fastjson.serializer.SerializerFeature;
-
 import java.util.*;
 import java.util.regex.Pattern;
 
@@ -61,6 +60,8 @@ public class ApiJsonTool {
 
         pjson.put("index", 0);
         pjson.put("req_body_form", new String[]{});
+        pjson.put("req_body_type", "form");
+
         pjson.put("req_params", new String[]{});
         pjson.put("up_time", System.currentTimeMillis());
 
@@ -181,11 +182,6 @@ public class ApiJsonTool {
             }
         }
     }
-    //判断是否是数字
-    public static boolean isInteger(String str) {
-        Pattern pattern = Pattern.compile("^[-\\+]?[\\d]*$");
-        return pattern.matcher(str).matches();
-    }
 
     /**
      * 把键值转换形式 转换成 YAPI 所需要的 格式
@@ -208,7 +204,6 @@ public class ApiJsonTool {
             for (int i = 0; i < cKeys.length; i++) {
                 String keyDesc = cKeys[i];
                 currLastKeyDesc+=keyDesc;
-                System.out.println(currLastKeyDesc);
 
                 String key = getKeyName(cKeys[i]);
                 currLastKey += key;
@@ -321,6 +316,13 @@ public class ApiJsonTool {
             }
         }
     }
+
+    //判断是否是数字
+    public static boolean isInteger(String str) {
+        Pattern pattern = Pattern.compile("^[-\\+]?[\\d]*$");
+        return pattern.matcher(str).matches();
+    }
+
     //把key和备注分解出来
     public static String getKeyName(String key){
         String keyName=key;
