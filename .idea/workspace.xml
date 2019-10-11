@@ -3,7 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="ef7f8afd-66c3-487f-a2d0-973a49bdbcf7" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/xyxb/backend/common/tool/apiApp/ApiJsonTool.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/xyxb/backend/common/tool/apiApp/ApiJsonTool.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -19,7 +19,7 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="YapiApp.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="YapiApp.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/xyxb/backend/common/tool/apiApp/YapiApp.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="342">
@@ -27,6 +27,18 @@
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="README.md" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/README.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="SPLIT">
+              <first_editor relative-caret-position="361">
+                <caret line="19" column="28" lean-forward="true" selection-start-line="19" selection-start-column="28" selection-end-line="19" selection-end-column="28" />
+              </first_editor>
+              <second_editor />
             </state>
           </provider>
         </entry>
@@ -70,8 +82,8 @@
         <option value="$PROJECT_DIR$/src/main/java/Test.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/xyxb/backend/common/tool/Test.java" />
         <option value="$PROJECT_DIR$/pom.xml" />
-        <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/src/main/java/com/xyxb/backend/common/tool/apiApp/ApiJsonTool.java" />
+        <option value="$PROJECT_DIR$/README.md" />
       </list>
     </option>
   </component>
@@ -272,7 +284,7 @@
       <workItem from="1570706176981" duration="426000" />
       <workItem from="1570706611615" duration="1875000" />
       <workItem from="1570776460824" duration="728000" />
-      <workItem from="1570785240354" duration="1290000" />
+      <workItem from="1570785240354" duration="2110000" />
     </task>
     <task id="LOCAL-00001" summary="fix">
       <created>1570709711986</created>
@@ -295,11 +307,18 @@
       <option name="project" value="LOCAL" />
       <updated>1570777177287</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="修复没法执行运行的bug">
+      <created>1570786697429</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1570786697429</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="6916000" />
+    <option name="totallyTimeSpent" value="7736000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1066" extended-state="6" />
@@ -319,14 +338,14 @@
       <window_info anchor="bottom" id="Terminal" order="7" />
       <window_info id="Capture Tool" order="2" />
       <window_info id="Designer" order="3" />
-      <window_info content_ui="combo" x="897" y="137" width="317" height="934" id="Project" order="6" visible="true" weight="0.17217484" />
+      <window_info active="true" content_ui="combo" x="897" y="137" width="317" height="934" id="Project" order="6" visible="true" weight="0.17217484" />
       <window_info anchor="right" id="Database" order="7" />
       <window_info id="Structure" order="0" side_tool="true" weight="0.6695096" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info id="UI Designer" order="4" />
       <window_info anchor="right" id="Theme Preview" order="8" />
       <window_info auto_hide="true" id="Favorites" order="5" side_tool="true" type="SLIDING" weight="0.32995737" />
-      <window_info active="true" anchor="bottom" id="Debug" order="3" visible="true" weight="0.5551983" />
+      <window_info anchor="bottom" id="Debug" order="3" visible="true" weight="0.2261522" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -376,7 +395,8 @@
     <MESSAGE value="fix" />
     <MESSAGE value="新增json包" />
     <MESSAGE value="新增描述信息" />
-    <option name="LAST_COMMIT_MESSAGE" value="新增描述信息" />
+    <MESSAGE value="修复没法执行运行的bug" />
+    <option name="LAST_COMMIT_MESSAGE" value="修复没法执行运行的bug" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/main/java/com/xyxb/backend/common/tool/apiApp/YapiApp.java">
@@ -469,16 +489,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/README.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="304">
-            <caret line="16" column="26" lean-forward="true" selection-start-line="16" selection-start-column="26" selection-end-line="16" selection-end-column="26" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/xyxb/backend/common/tool/apiApp/demo.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="114">
@@ -503,6 +513,16 @@
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="361">
+            <caret line="19" column="28" lean-forward="true" selection-start-line="19" selection-start-column="28" selection-end-line="19" selection-end-column="28" />
+          </first_editor>
+          <second_editor />
         </state>
       </provider>
     </entry>
