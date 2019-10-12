@@ -59,7 +59,7 @@ if(context.pathname.indexOf(mock) != -1){
 }
 
 #### Pre-response Script(响应数据处理脚本)
-
+```
 //设置 cookies
 function setCookie(name,value) 
 { 
@@ -101,7 +101,7 @@ if (context.pathname.indexOf('/sys/login') != -1) {
 	    storage.setItem('token-----'+userTimeToken, token);
 	}
 }
-
+```
 
 
 

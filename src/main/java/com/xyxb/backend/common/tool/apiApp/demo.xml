@@ -11,7 +11,7 @@
                 {"aaa(测-aaa)":123,"bbb(测-bbb)":345}
             </reqHeaders>
             <reqQuery><!-- 请求参数 "()" 里面是需要填写的参数描述 -->
-                {"aaa(测-aaa)":123,"bbb(测-bbb)":345}
+                {"aaa(!测-aaa)":123,"bbb(测-bbb)":345}
             </reqQuery>
             <resBody><!-- 标准JSON格式返回值，只需要在 key 加入 "(key的描述)"-->
                 {
