@@ -18,6 +18,7 @@
 
 #### TOKEN设置参考
 #####Pre-request Script(请求参数处理脚本)
+```
 //设置 cookies
 function setCookie(name,value) 
 { 
@@ -57,7 +58,7 @@ if(context.pathname.indexOf(mock) != -1){
     var token = storage.getItem('token-----'+userTimeToken);
     context.requestHeader.Tokensd=token;
 }
-
+```
 #### Pre-response Script(响应数据处理脚本)
 ```
 //设置 cookies
