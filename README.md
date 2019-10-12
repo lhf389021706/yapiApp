@@ -16,6 +16,44 @@
 
 1. 运行 YapiApp 中的main 方法就好了
 
+#### 参数说明
+```
+<ApiInfo>
+    <desc>案例</desc><!-- 文件夹介绍 -->
+    <name>demo</name><!-- 文件夹名称 如果不存在会自动创建 -->
+    <apis>
+        <api>
+            <path>/test3</path><!-- 请求路径 -->
+            <title>测试233</title><!-- 标题 -->
+            <uid>11</uid><!-- 更新人，这里11 -->
+            <tag>5</tag><!-- 版本 这里会记录 最多10个 tag 版本迭代 -->
+            <reqHeaders><!-- 请求参数头 "()" 里面是需要填写的参数描述,描述里面带"!" 即 不是必须的 -->
+                {"aaa(测-aaa)":123,"bbb(测-bbb)":345}
+            </reqHeaders>
+            <reqQuery><!-- 请求参数 "()" 里面是需要填写的参数描述  描述里面带"!" 即 不是必须的 -->
+                {"aaa(测-aaa)":123,"bbb(测-bbb)":345}
+            </reqQuery>
+            <resBody><!-- 标准JSON格式返回值，只需要在 key 加入 "(key的描述)"-->
+                {
+                    "ccc(用话ID)":{
+                        "ccc-1(测ccc-1)":[
+                            {
+                                "a":1,
+                                "b":[{"b-1":"a"}]
+                            }
+                        ],
+                        "ccc-2":"1792318200684396.8"
+                    }
+                }
+            </resBody>
+            <method>GET</method><!-- 请求协议 "-->
+        </api>
+    </apis>
+</ApiInfo>
+
+```
+
+
 #### TOKEN设置参考
 #####Pre-request Script(请求参数处理脚本)
 ```
