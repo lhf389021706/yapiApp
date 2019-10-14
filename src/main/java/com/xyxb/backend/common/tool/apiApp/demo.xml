@@ -15,7 +15,7 @@
             </reqQuery>
             <resBody><!-- 标准JSON格式返回值，只需要在 key 加入 "(key的描述)"-->
                 {
-                    "ccc(用话ID)":{
+                    "ccc(用话ID|notNull,ltEq5,gtEq5)":{
                         "ccc-1(测ccc-1)":[
                             {
                                 "a":1,
