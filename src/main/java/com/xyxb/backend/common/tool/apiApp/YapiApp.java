@@ -327,6 +327,7 @@ public class YapiApp {
             Element tag = child.element("tag");
             Element resBody = child.element("resBody");
             Element reqQuery = child.element("reqQuery");
+            Element reqBodyForm = child.element("reqBodyForm");
             Element method = child.element("method");
             Element reqHeaders = child.element("reqHeaders");
 
@@ -348,6 +349,9 @@ public class YapiApp {
             if(reqQuery==null){
                 throw new Exception("标签<reqQuery></reqQuery>不能没有");
             }
+            if(reqBodyForm==null){
+                throw new Exception("标签<reqBodyForm></reqBodyForm>不能没有");
+            }
             if(method==null){
                 throw new Exception("标签<method></method>不能没有");
             }
@@ -363,6 +367,7 @@ public class YapiApp {
             api.setProjectId(projectId);
             api.setTag(tag.getText());
             api.setResBody(resBody.getText());
+            api.setReqBodyForm(reqBodyForm.getText());
             api.setMethod(method.getText());
             api.setReqQuery(reqQuery.getText());
             api.setReqHeaders(reqHeaders.getText());

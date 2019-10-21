@@ -58,8 +58,10 @@ public class ApiJsonTool {
         JSONArray reqRuery = getReqQuery(api.getReqQuery());
         pjson.put("req_query", reqRuery);
 
+        JSONArray reqBodyForm = getReqQuery(api.getReqBodyForm());
+        pjson.put("req_body_form", reqBodyForm);
+
         pjson.put("index", 0);
-        pjson.put("req_body_form", new String[]{});
         pjson.put("req_body_type", "form");
 
         pjson.put("req_params", new String[]{});
@@ -68,6 +70,7 @@ public class ApiJsonTool {
         pjson.put("api_opened", true);
         pjson.put("status", "undone");
 
+        System.out.println("-->"+pjson.toJSONString());
         return pjson;
     }
 
@@ -100,6 +103,7 @@ public class ApiJsonTool {
             query.put("example", tagObject.get(cKey));
             query.put("desc", description);
             query.put("value", tagObject.get(cKey));
+            query.put("type", "text");
             rs.add(query);
         }
 

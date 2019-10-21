@@ -8,8 +8,9 @@ public class Api {
     private int uid;//更新人
     private int projectId;//项目ID
     private String tag;//版本标志
-    private String reqQuery;//请求参数 {"a(参数描述)":b}
-    private String reqHeaders;//请求参数 {"a(参数描述)":b}
+    private String reqQuery;//Query请求参数 {"a(参数描述)":b}
+    private String reqHeaders;//Headers请求参数 {"a(参数描述)":b}
+    private String reqBodyForm;//body请求参数 {"a(参数描述)":b}
     private String resBody;//返回参数 {"a(参数描述)":b}
     private String method;//返回参数 {"a(参数描述)":b}
     private int id;//API id 更新根据 path 进行更新，这里id 没啥用
@@ -118,6 +119,14 @@ public class Api {
 
     public void setReqHeaders(String reqHeaders) {
         this.reqHeaders = reqHeaders;
+    }
+
+    public String getReqBodyForm() {
+        return reqBodyForm;
+    }
+
+    public void setReqBodyForm(String reqBodyForm) {
+        this.reqBodyForm = reqBodyForm;
     }
 }
 
