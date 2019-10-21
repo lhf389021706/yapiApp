@@ -3,10 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="ef7f8afd-66c3-487f-a2d0-973a49bdbcf7" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/xyxb/backend/common/tool/apiApp/Api.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/xyxb/backend/common/tool/apiApp/Api.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/xyxb/backend/common/tool/apiApp/ApiJsonTool.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/xyxb/backend/common/tool/apiApp/ApiJsonTool.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/xyxb/backend/common/tool/apiApp/YapiApp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/xyxb/backend/common/tool/apiApp/YapiApp.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/xyxb/backend/common/tool/apiApp/demo.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/xyxb/backend/common/tool/apiApp/demo.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -58,8 +54,8 @@
       <file leaf-file-name="Api.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/xyxb/backend/common/tool/apiApp/Api.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="125">
-              <caret line="7" column="25" lean-forward="true" selection-start-line="7" selection-start-column="25" selection-end-line="7" selection-end-column="25" />
+            <state relative-caret-position="315">
+              <caret line="17" column="13" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="13" />
               <folding>
                 <element signature="e#2071#2072#0" expanded="true" />
                 <element signature="e#2102#2103#0" expanded="true" />
@@ -304,7 +300,7 @@
       <workItem from="1570848777263" duration="4316000" />
       <workItem from="1571019548805" duration="984000" />
       <workItem from="1571132704816" duration="2690000" />
-      <workItem from="1571642158776" duration="3123000" />
+      <workItem from="1571642158776" duration="3409000" />
     </task>
     <task id="LOCAL-00001" summary="fix">
       <created>1570709711986</created>
@@ -369,14 +365,22 @@
       <option name="project" value="LOCAL" />
       <updated>1571019798792</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="加入body参数">
+      <created>1571645299735</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1571645299735</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="20629000" />
+    <option name="totallyTimeSpent" value="20915000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1066" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -452,7 +456,8 @@
     <MESSAGE value="修复没法执行运行的bug" />
     <MESSAGE value="完善提示" />
     <MESSAGE value="参数中加入非必填的情况" />
-    <option name="LAST_COMMIT_MESSAGE" value="参数中加入非必填的情况" />
+    <MESSAGE value="加入body参数" />
+    <option name="LAST_COMMIT_MESSAGE" value="加入body参数" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -734,8 +739,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/xyxb/backend/common/tool/apiApp/Api.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="125">
-          <caret line="7" column="25" lean-forward="true" selection-start-line="7" selection-start-column="25" selection-end-line="7" selection-end-column="25" />
+        <state relative-caret-position="315">
+          <caret line="17" column="13" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="13" />
           <folding>
             <element signature="e#2071#2072#0" expanded="true" />
             <element signature="e#2102#2103#0" expanded="true" />
