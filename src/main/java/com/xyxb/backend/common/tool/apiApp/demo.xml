@@ -3,7 +3,7 @@
     <name>demo</name><!-- 文件夹名称 如果不存在会自动创建 -->
     <apis>
         <api>
-            <path>/liveTicket/add2</path><!-- 请求路径 -->
+            <path>/liveTicket/add2?a</path><!-- 请求路径 -->
             <title>测</title><!-- 标题 -->
             <uid>11</uid><!-- 更新人，这里11 -->
             <tag>5</tag><!-- 版本 这里会记录 最多10个 tag 版本迭代 -->
@@ -16,6 +16,20 @@
             <reqBodyForm><!-- 请求参数 "()" 里面是需要填写的参数描述 -->
                 {"body1(!测-aaa)":123,"body2(测-bbb)":345}
             </reqBodyForm>
+            <reqBodyOther><!-- 标准JSON格式返回值，只需要在 key 加入 "(key的描述)"-->
+                {
+                    "ccc(用话ID|notNull,ltEq5,gtEq5)":{
+                        "ccc-1(测ccc-1)":[
+                            {
+                            "a":1,
+                            "b":[{"b-1":"a"}]
+                            }
+                        ],
+                        "ccc-2":"1792318200684396.8"
+                    },
+                    "aaa":1
+                }
+            </reqBodyOther>
             <resBody><!-- 标准JSON格式返回值，只需要在 key 加入 "(key的描述)"-->
                 {
                     "ccc(用话ID|notNull,ltEq5,gtEq5)":{

@@ -61,6 +61,8 @@ public class ApiJsonTool {
         JSONArray reqBodyForm = getReqQuery(api.getReqBodyForm());
         pjson.put("req_body_form", reqBodyForm);
 
+        pjson.put("req_body_other", getResBody(api.getReqBodyOther()).toString());
+
         pjson.put("index", 0);
         pjson.put("req_body_type", "form");
 
@@ -70,7 +72,6 @@ public class ApiJsonTool {
         pjson.put("api_opened", true);
         pjson.put("status", "undone");
 
-        System.out.println("-->"+pjson.toJSONString());
         return pjson;
     }
 

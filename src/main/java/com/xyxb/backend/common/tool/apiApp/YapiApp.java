@@ -330,6 +330,9 @@ public class YapiApp {
             Element reqBodyForm = child.element("reqBodyForm");
             Element method = child.element("method");
             Element reqHeaders = child.element("reqHeaders");
+            Element reqBodyOther = child.element("reqBodyOther");
+
+
 
             if(path==null){
                 throw new Exception(fileName+"("+line+"):"+child.getStringValue()+"标签<path></path>不能没有");
@@ -358,6 +361,9 @@ public class YapiApp {
             if(reqHeaders==null){
                 throw new Exception("标签<reqHeaders></reqHeaders>不能没有");
             }
+            if(reqBodyOther==null){
+                throw new Exception("标签<reqBodyOther></reqBodyOther>不能没有");
+            }
 
             Api api = new Api();
             api.setPath(path.getText());
@@ -371,6 +377,7 @@ public class YapiApp {
             api.setMethod(method.getText());
             api.setReqQuery(reqQuery.getText());
             api.setReqHeaders(reqHeaders.getText());
+            api.setReqBodyOther(reqBodyOther.getText());
 
             apis.add(api);
         }
