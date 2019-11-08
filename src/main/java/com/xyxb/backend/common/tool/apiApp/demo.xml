@@ -17,25 +17,14 @@
                 {"body1(!测-aaa)":123,"body2(测-bbb)":345}
             </reqBodyForm>
             <reqBodyOther><!-- 标准JSON格式返回值，只需要在 key 加入 "(key的描述)"-->
-                {
-                    "ccc(用话ID|notNull,ltEq5,gtEq5)":{
-                        "ccc-1(测ccc-1)":[
-                            {
-                            "a":1,
-                            "b":[{"b-1":"a"}]
-                            }
-                        ],
-                        "ccc-2":"1792318200684396.8"
-                    },
-                    "aaa":1
-                }
+
             </reqBodyOther>
             <resBody><!-- 标准JSON格式返回值，只需要在 key 加入 "(key的描述)"-->
                 {
                     "ccc(用话ID|notNull,ltEq5,gtEq5)":{
                         "ccc-1(测ccc-1)":[
                             {
-                                "a":1,
+                                "a":false,
                                 "b":[{"b-1":"a"}]
                             }
                         ],

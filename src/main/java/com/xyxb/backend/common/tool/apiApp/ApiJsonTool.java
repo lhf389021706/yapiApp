@@ -18,9 +18,9 @@ public class ApiJsonTool {
         JSONObject pjson = new JSONObject();
 
         JSONObject queryPath = new JSONObject();
-        queryPath.put("path", api.getPath());
+        queryPath.put("path", api.getPath());//路径
         queryPath.put("params", new String[]{});
-        pjson.put("query_path", queryPath);
+        pjson.put("query_path", queryPath);//query查询参数
 
         pjson.put("res_body_type", "json");
         pjson.put("type", "static");
@@ -120,6 +120,9 @@ public class ApiJsonTool {
     public static JSONObject getResBody(String json) {
         JSONObject tagObject = JSONObject.parseObject(json);
         Map<Integer, String> addrMap = new HashMap<>();
+        if(tagObject==null){
+            return new JSONObject();
+        }
         addrMap.put(tagObject.hashCode(), "");
 
         LinkedHashMap rsMap = new LinkedHashMap();
@@ -130,7 +133,19 @@ public class ApiJsonTool {
         rspObj.put("title", "empty object");
         rspObj.put("properties", new JSONObject());
         toYapiReqBody(rsMap, rspObj);
+        System.out.println(rspObj.toJSONString());
         return new JSONObject(rspObj);
+    }
+
+    private static int countString(String str,String s) {
+        int count = 0;
+        for(int i= 0; i<=str.length(); i++){
+            if(str.indexOf(s) == i){
+                str = str.substring(i+1,str.length());
+                count++;
+            }
+        }
+        return count;
     }
 
     /**
@@ -166,11 +181,21 @@ public class ApiJsonTool {
                     addrMap.put(object.hashCode(), pKey);
 
                     JSONArray array = new JSONArray();
-                    if (((JSONArray) object).size()>0 &&  isInteger(((JSONArray) object).get(0).toString())) { //如果index位置的字符是数字  返回true
-                        array.add(1);
-                    } else if (((JSONArray) object).size()>0 &&  ((JSONArray) object).get(0) instanceof String) { //如果index位置的字符是数字  返回true
-                        array.add("a");
+                    if(((JSONArray) object).size()>0 ){
+                        if (isInteger(((JSONArray) object).get(0).toString())) { //如果index位置的字符是数字  返回true
+                            String str = ((JSONArray) object).toJSONString();
+                            int a = countString(str,"\"");
+                            int b = countString(str,"'");
+                            if(a>0 || b>0){
+                                array.add("a");
+                            }else{
+                                array.add(1);
+                            }
+                        } else if (((JSONArray) object).get(0) instanceof String) { //如果index位置的字符是数字  返回true
+                            array.add("a");
+                        }
                     }
+
                     rsMap.put(pKey,array);
 
                     List<Object> list = JSONArray.parseArray(object.toString(), Object.class);
@@ -302,9 +327,14 @@ public class ApiJsonTool {
             if (lastKeyDesc.indexOf("(") > -1 && lastKeyDesc.indexOf(")") > -1) {
                 description = lastKeyDesc.substring(lastKeyDesc.indexOf("(")+1, lastKeyDesc.indexOf(")"));
             }
+            if(description.equals("a")){
+                int a=0;
+            }
             jsonObject.put("description", description);
 
-            if (value instanceof JSONObject || value == null) {
+            if ("true".equals(value.toString().trim()) || "false".equals(value.toString().trim())) {
+                jsonObject.put("type", "boolean");
+            } else if (value instanceof JSONObject || value == null) {
                 jsonObject.put("type", "object");
             } else if ( value instanceof JSONArray ) {
                 jsonObject.put("type", "array");

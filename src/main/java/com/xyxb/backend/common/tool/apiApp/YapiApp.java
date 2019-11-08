@@ -332,8 +332,6 @@ public class YapiApp {
             Element reqHeaders = child.element("reqHeaders");
             Element reqBodyOther = child.element("reqBodyOther");
 
-
-
             if(path==null){
                 throw new Exception(fileName+"("+line+"):"+child.getStringValue()+"标签<path></path>不能没有");
             }
