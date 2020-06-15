@@ -2,11 +2,18 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ef7f8afd-66c3-487f-a2d0-973a49bdbcf7" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/xyxb/backend/common/tool/apiApp/Test.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/xyxb/backend/common/tool/apiApp/HttpUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/xyxb/backend/common/tool/apiFile/aaa.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/xyxb/backend/common/tool/apiFile/login.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/xyxb/backend/common/tool/showDocApp/Doc.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/xyxb/backend/common/tool/showDocApp/HttpUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/xyxb/backend/common/tool/showDocApp/ShowDocTool.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/xyxb/backend/common/tool/apiApp/ApiJsonTool.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/xyxb/backend/common/tool/apiApp/ApiJsonTool.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/xyxb/backend/common/tool/apiApp/Test.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/xyxb/backend/common/tool/apiApp/Test.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/xyxb/backend/common/tool/apiApp/YapiApp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/xyxb/backend/common/tool/apiApp/YapiApp.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/xyxb/backend/common/tool/apiApp/demo.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/xyxb/backend/common/tool/apiApp/demo.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/xyxb/backend/common/tool/apiApp/demo.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/xyxb/backend/common/tool/apiFile/demo.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -17,64 +24,39 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
+    <expand />
+    <select />
+  </component>
   <component name="FavoritesManager">
     <favorites_list name="yapiApp" />
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="YapiApp.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="YapiApp.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/xyxb/backend/common/tool/apiApp/YapiApp.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1911">
-              <caret line="276" column="49" selection-start-line="276" selection-start-column="49" selection-end-line="276" selection-end-column="49" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state relative-caret-position="304">
+              <caret line="16" column="20" lean-forward="true" selection-start-line="16" selection-start-column="20" selection-end-line="16" selection-end-column="20" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Test.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/xyxb/backend/common/tool/apiApp/Test.java">
+      <file leaf-file-name="aaa.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/xyxb/backend/common/tool/apiFile/aaa.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="114">
-              <caret line="6" column="50" selection-start-line="6" selection-start-column="50" selection-end-line="6" selection-end-column="50" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ApiJsonTool.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/xyxb/backend/common/tool/apiApp/ApiJsonTool.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="242">
-              <caret line="346" column="51" lean-forward="true" selection-start-line="346" selection-start-column="51" selection-end-line="346" selection-end-column="51" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Api.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/xyxb/backend/common/tool/apiApp/Api.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="209">
-              <caret line="11" column="43" selection-start-line="11" selection-start-column="32" selection-end-line="11" selection-end-column="43" />
-              <folding>
-                <element signature="e#2521#2522#0" expanded="true" />
-                <element signature="e#2556#2557#0" expanded="true" />
-                <element signature="e#2612#2613#0" expanded="true" />
-                <element signature="e#2660#2661#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="demo.xml" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/xyxb/backend/common/tool/apiApp/demo.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="426">
-              <caret line="25" column="29" lean-forward="true" selection-start-line="25" selection-start-column="29" selection-end-line="25" selection-end-column="29" />
+            <state relative-caret-position="437">
+              <caret line="23" column="23" selection-start-line="23" selection-start-column="23" selection-end-line="23" selection-end-column="23" />
             </state>
           </provider>
         </entry>
@@ -92,6 +74,8 @@
     <findStrings>
       <find>[1]</find>
       <find>toYapiReqBody</find>
+      <find>checkCat</find>
+      <find>analysisJson</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -102,13 +86,24 @@
       <list>
         <option value="$PROJECT_DIR$/src/main/java/Test.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/xyxb/backend/common/tool/Test.java" />
-        <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/src/main/java/com/xyxb/backend/common/tool/apiApp/Api.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/xyxb/backend/common/tool/apiApp/YapiApp.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/xyxb/backend/common/tool/apiApp/HttpUtil.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/xyxb/backend/common/tool/apiApp/ShowDocTool.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/xyxb/backend/common/tool/showDocApp/ItemInfo.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/xyxb/backend/common/tool/apiApp/Test.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/xyxb/backend/common/tool/apiApp/ApiJsonTool.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/xyxb/backend/common/tool/apiApp/xyxb.xml" />
         <option value="$PROJECT_DIR$/src/main/java/com/xyxb/backend/common/tool/apiApp/demo.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/com/xyxb/backend/common/tool/apiFile/login.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/com/xyxb/backend/common/tool/apiFile/productInfo.xml" />
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/com/xyxb/backend/common/tool/tool/HttpUtil.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/xyxb/backend/common/tool/showDocApp/HttpUtil.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/xyxb/backend/common/tool/showDocApp/Doc.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/xyxb/backend/common/tool/apiApp/ApiJsonTool.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/xyxb/backend/common/tool/apiApp/YapiApp.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/xyxb/backend/common/tool/apiFile/aaa.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/com/xyxb/backend/common/tool/showDocApp/ShowDocTool.java" />
       </list>
     </option>
   </component>
@@ -125,18 +120,13 @@
           <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
           <item name="yapiApp" type="9519ce18:MavenProjectsStructure$ProjectNode" />
         </path>
-        <path>
-          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
-          <item name="yapiApp" type="9519ce18:MavenProjectsStructure$ProjectNode" />
-          <item name="Dependencies" type="f4be9f2a:MavenProjectsStructure$DependenciesNode" />
-        </path>
       </expand>
       <select />
     </treeState>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="480" />
-    <option name="y" value="277" />
+    <option name="x" value="-288" />
+    <option name="y" value="325" />
     <option name="width" value="1582" />
     <option name="height" value="581" />
   </component>
@@ -151,7 +141,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
+      <pane id="Scope" />
+      <pane id="AndroidView" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -183,19 +174,40 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="tool" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="yapiApp" type="b2602c69:ProjectViewProjectNode" />
+              <item name="yapiApp" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="tool" type="462c0819:PsiDirectoryNode" />
               <item name="apiApp" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="yapiApp" type="b2602c69:ProjectViewProjectNode" />
               <item name="yapiApp" type="462c0819:PsiDirectoryNode" />
-              <item name="target" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="tool" type="462c0819:PsiDirectoryNode" />
+              <item name="apiFile" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="yapiApp" type="b2602c69:ProjectViewProjectNode" />
+              <item name="yapiApp" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="tool" type="462c0819:PsiDirectoryNode" />
+              <item name="showDocApp" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="AndroidView" />
-      <pane id="Scope" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -215,8 +227,15 @@
       <recent name="" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\learn\yapiApp\src\main\java\com\xyxb\backend\common\tool\apiFile" />
       <recent name="D:\learn\yapiApp\src\main\java\com\xyxb\backend\common\tool\apiApp" />
       <recent name="D:\learn\yapiApp\src\main\java\com\xyxb\backend\common\tool" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.xyxb.backend.common.tool.showDocApp" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\learn\yapiApp\src\main\java\com\xyxb\backend\common\tool\ApiFile" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -232,6 +251,28 @@
     </option>
   </component>
   <component name="RunManager" selected="Application.YapiApp">
+    <configuration name="HttpUtil" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.xyxb.backend.common.tool.apiApp.HttpUtil" />
+      <module name="yapiApp" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.xyxb.backend.common.tool.showDocApp.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+    </configuration>
+    <configuration name="ShowDocTool" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.xyxb.backend.common.tool.showDocApp.ShowDocTool" />
+      <module name="yapiApp" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.xyxb.backend.common.tool.showDocApp.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+    </configuration>
     <configuration name="Test (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.xyxb.backend.common.tool.apiApp.Test" />
       <module name="yapiApp" />
@@ -248,13 +289,24 @@
       <module name="yapiApp" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
     </configuration>
+    <configuration name="Test" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.xyxb.backend.common.tool.apiApp.Test" />
+      <module name="yapiApp" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.xyxb.backend.common.tool.showDocApp.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+    </configuration>
     <configuration name="YapiApp" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.xyxb.backend.common.tool.apiApp.YapiApp" />
       <module name="yapiApp" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.xyxb.backend.common.tool.apiApp.*" />
+          <option name="PATTERN" value="com.xyxb.backend.common.tool.showDocApp.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -303,12 +355,16 @@
     <list>
       <item itemvalue="Application.Test" />
       <item itemvalue="Application.YapiApp" />
+      <item itemvalue="Application.HttpUtil" />
+      <item itemvalue="Application.ShowDocTool" />
       <item itemvalue="Application.Test (1)" />
     </list>
     <recent_temporary>
       <list>
         <item itemvalue="Application.YapiApp" />
+        <item itemvalue="Application.ShowDocTool" />
         <item itemvalue="Application.Test (1)" />
+        <item itemvalue="Application.HttpUtil" />
         <item itemvalue="Application.Test" />
       </list>
     </recent_temporary>
@@ -334,7 +390,22 @@
       <workItem from="1571642158776" duration="4280000" />
       <workItem from="1571747456377" duration="1299000" />
       <workItem from="1571820312604" duration="4027000" />
-      <workItem from="1573207978802" duration="13142000" />
+      <workItem from="1573207978802" duration="13792000" />
+      <workItem from="1573819992828" duration="1956000" />
+      <workItem from="1574756221144" duration="7156000" />
+      <workItem from="1574768279630" duration="5586000" />
+      <workItem from="1574911223486" duration="11604000" />
+      <workItem from="1574938174256" duration="10993000" />
+      <workItem from="1575085736808" duration="14000" />
+      <workItem from="1576478849262" duration="7373000" />
+      <workItem from="1576486891824" duration="9762000" />
+      <workItem from="1576642545259" duration="9009000" />
+      <workItem from="1577070773039" duration="2497000" />
+      <workItem from="1577073854095" duration="1878000" />
+      <workItem from="1578277254892" duration="15008000" />
+      <workItem from="1578298868698" duration="3281000" />
+      <workItem from="1578302469954" duration="885000" />
+      <workItem from="1592222935056" duration="26000" />
     </task>
     <task id="LOCAL-00001" summary="fix">
       <created>1570709711986</created>
@@ -420,11 +491,18 @@
       <option name="project" value="LOCAL" />
       <updated>1571822378682</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="支持 数字 和 字符串 识别 ，支持布尔类型识别">
+      <created>1573224438540</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1573224438540</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="40254000" />
+    <option name="totallyTimeSpent" value="127932000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1066" extended-state="6" />
@@ -432,63 +510,33 @@
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Messages" order="7" weight="0.28403002" />
       <window_info anchor="right" id="Palette&#9;" order="4" />
       <window_info id="Image Layers" order="1" />
       <window_info anchor="right" id="Capture Analysis" order="5" />
-      <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
-      <window_info anchor="right" id="Maven Projects" order="6" />
+      <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.5021322" side_tool="true" weight="0.39335477" />
+      <window_info anchor="right" id="Maven Projects" order="6" weight="0.20735608" />
       <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" order="7" weight="0.43194" />
-      <window_info anchor="bottom" id="Run" order="2" />
-      <window_info anchor="bottom" id="Terminal" order="7" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.3290461" />
+      <window_info anchor="bottom" id="Version Control" order="10" weight="0.43194" />
+      <window_info anchor="bottom" id="Terminal" order="8" />
       <window_info id="Capture Tool" order="2" />
       <window_info id="Designer" order="3" />
-      <window_info content_ui="combo" x="897" y="137" width="317" height="934" id="Project" order="6" visible="true" weight="0.23507462" />
-      <window_info anchor="right" id="Database" order="7" />
+      <window_info active="true" content_ui="combo" x="897" y="137" width="317" height="934" id="Project" order="6" visible="true" weight="0.18763326" />
+      <window_info anchor="right" id="Database" order="7" weight="0.32995737" />
       <window_info id="Structure" order="0" side_tool="true" weight="0.6695096" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info id="UI Designer" order="4" />
       <window_info anchor="right" id="Theme Preview" order="8" />
+      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.4978678" weight="0.44051448" />
       <window_info auto_hide="true" id="Favorites" order="5" side_tool="true" type="SLIDING" weight="0.32995737" />
-      <window_info active="true" anchor="bottom" id="Debug" order="3" visible="true" weight="0.36441585" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.4523044" />
+      <window_info anchor="bottom" id="Messages" order="11" weight="0.34190783" />
     </layout>
-    <layout-to-restore>
-      <window_info anchor="right" id="Palette" order="3" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="right" id="Capture Analysis" order="4" />
-      <window_info anchor="bottom" id="Version Control" order="10" show_stripe_button="false" />
-      <window_info anchor="right" id="Theme Preview" order="5" />
-      <window_info anchor="bottom" id="Message" order="0" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.1673774" />
-      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
-      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Run" order="2" />
-      <window_info id="Image Layers" order="2" />
-      <window_info id="Designer" order="3" />
-      <window_info id="UI Designer" order="4" />
-      <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
-      <window_info anchor="right" id="Database" order="6" />
-      <window_info anchor="right" id="Palette&#9;" order="7" />
-      <window_info anchor="bottom" id="Terminal" order="8" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
-      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
-      <window_info id="Capture Tool" order="5" />
-      <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Messages" order="11" visible="true" weight="0.42505354" />
-      <window_info anchor="right" id="Maven Projects" order="8" />
-      <window_info id="Favorites" order="6" side_tool="true" />
-    </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
@@ -506,116 +554,23 @@
     <MESSAGE value="参数中加入非必填的情况" />
     <MESSAGE value="加入body参数" />
     <MESSAGE value="加入json 格式参数" />
-    <option name="LAST_COMMIT_MESSAGE" value="加入json 格式参数" />
+    <MESSAGE value="支持 数字 和 字符串 识别 ，支持布尔类型识别" />
+    <option name="LAST_COMMIT_MESSAGE" value="支持 数字 和 字符串 识别 ，支持布尔类型识别" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="45" />
+      <option name="time" value="82" />
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/main/java/com/xyxb/backend/common/tool/apiApp/YapiApp.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="4978">
-          <caret line="276" column="55" selection-start-line="276" selection-start-column="55" selection-end-line="276" selection-end-column="55" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/xyxb/backend/common/tool/apiApp/ApiJsonTool.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1083">
-          <caret line="63" column="33" selection-start-line="63" selection-start-column="33" selection-end-line="63" selection-end-column="33" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/xyxb/backend/common/tool/apiApp/Api.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="247">
-          <caret line="13" column="31" selection-start-line="13" selection-start-column="19" selection-end-line="13" selection-end-column="31" />
-          <folding>
-            <element signature="e#2521#2522#0" expanded="true" />
-            <element signature="e#2556#2557#0" expanded="true" />
-            <element signature="e#2612#2613#0" expanded="true" />
-            <element signature="e#2660#2661#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/xyxb/backend/common/tool/apiApp/demo.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="380">
-          <caret line="20" column="50" selection-start-line="20" selection-start-column="50" selection-end-line="20" selection-end-column="50" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/xyxb/backend/common/tool/apiApp/YapiApp.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="551">
-          <caret line="43" column="34" selection-start-line="43" selection-start-column="34" selection-end-line="43" selection-end-column="34" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/xyxb/backend/common/tool/apiApp/demo.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="399">
-          <caret line="21" column="41" lean-forward="true" selection-start-line="21" selection-start-column="41" selection-end-line="21" selection-end-column="41" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/xyxb/backend/common/tool/apiApp/YapiApp.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="7011">
-          <caret line="369" column="52" selection-start-line="369" selection-start-column="52" selection-end-line="369" selection-end-column="52" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/xyxb/backend/common/tool/apiApp/demo.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="304">
-          <caret line="16" column="43" selection-start-line="16" selection-start-column="43" selection-end-line="16" selection-end-column="43" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/xyxb/backend/common/tool/apiApp/ApiJsonTool.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1444">
-          <caret line="76" column="7" lean-forward="true" selection-start-line="76" selection-start-column="7" selection-end-line="76" selection-end-column="7" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/xyxb/backend/common/tool/apiApp/Api.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1349">
-          <caret line="124" column="27" lean-forward="true" selection-start-line="124" selection-start-column="27" selection-end-line="124" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/xyxb/backend/common/tool/apiApp/YapiApp.java">
-      <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="7220">
           <caret line="394" column="52" lean-forward="true" selection-start-line="394" selection-start-column="52" selection-end-line="394" selection-end-column="52" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/xyxb/backend/common/tool/apiApp/demo.xml">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/xyxb/backend/common/tool/apiFile/demo.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="76">
           <caret line="4" column="13" lean-forward="true" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
@@ -628,6 +583,7 @@
           <caret line="18" selection-start-line="18" selection-end-line="18" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="method#toYapiReqBody#0;class#ApiJsonTool#0" />
           </folding>
         </state>
       </provider>
@@ -646,9 +602,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1615">
           <caret line="99" column="49" selection-start-line="99" selection-start-column="49" selection-end-line="99" selection-end-column="49" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -668,11 +621,12 @@
           <caret line="18" selection-start-line="18" selection-end-line="18" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="method#toYapiReqBody#0;class#ApiJsonTool#0" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/xyxb/backend/common/tool/apiApp/demo.xml">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/xyxb/backend/common/tool/apiFile/demo.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="323">
           <caret line="17" column="41" selection-start-line="17" selection-start-column="41" selection-end-line="17" selection-end-column="41" />
@@ -683,9 +637,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1615">
           <caret line="99" column="49" selection-start-line="99" selection-start-column="49" selection-end-line="99" selection-end-column="49" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -705,11 +656,12 @@
           <caret line="18" lean-forward="true" selection-start-line="18" selection-end-line="18" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="method#toYapiReqBody#0;class#ApiJsonTool#0" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/xyxb/backend/common/tool/apiApp/demo.xml">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/xyxb/backend/common/tool/apiFile/demo.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="152">
           <caret line="8" column="53" selection-start-line="8" selection-start-column="53" selection-end-line="8" selection-end-column="53" />
@@ -720,13 +672,10 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="665">
           <caret line="35" column="13" lean-forward="true" selection-start-line="35" selection-start-column="13" selection-end-line="35" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/xyxb/backend/common/tool/apiApp/demo.xml">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/xyxb/backend/common/tool/apiFile/demo.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="247">
           <caret line="13" column="23" selection-start-line="13" selection-start-column="23" selection-end-line="13" selection-end-column="23" />
@@ -739,6 +688,7 @@
           <caret line="252" column="38" lean-forward="true" selection-start-line="252" selection-start-column="38" selection-end-line="252" selection-end-column="38" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="method#toYapiReqBody#0;class#ApiJsonTool#0" />
           </folding>
         </state>
       </provider>
@@ -747,13 +697,10 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="342">
           <caret line="18" column="20" selection-start-line="18" selection-start-column="13" selection-end-line="18" selection-end-column="20" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/xyxb/backend/common/tool/apiApp/demo.xml">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/xyxb/backend/common/tool/apiFile/demo.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="190">
           <caret line="10" column="51" lean-forward="true" selection-start-line="10" selection-start-column="51" selection-end-line="10" selection-end-column="51" />
@@ -764,13 +711,10 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="7068">
           <caret line="386" column="44" lean-forward="true" selection-start-line="386" selection-start-column="44" selection-end-line="386" selection-end-column="44" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/xyxb/backend/common/tool/apiApp/demo.xml">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/xyxb/backend/common/tool/apiFile/demo.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="380">
           <caret line="20" column="34" selection-start-line="20" selection-start-column="34" selection-end-line="20" selection-end-column="34" />
@@ -826,20 +770,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/xyxb/backend/common/tool/Test.java" />
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="291">
-          <caret line="38" column="31" selection-start-line="38" selection-start-column="31" selection-end-line="38" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/xyxb/backend/common/tool/apiApp/ApiInfo.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="76">
-          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
@@ -850,50 +780,122 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/xyxb/backend/common/tool/apiApp/Api.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="209">
-          <caret line="11" column="43" selection-start-line="11" selection-start-column="32" selection-end-line="11" selection-end-column="43" />
-          <folding>
-            <element signature="e#2521#2522#0" expanded="true" />
-            <element signature="e#2556#2557#0" expanded="true" />
-            <element signature="e#2612#2613#0" expanded="true" />
-            <element signature="e#2660#2661#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/xyxb/backend/common/tool/showDocApp/ItemInfo.java" />
     <entry file="file://$PROJECT_DIR$/src/main/java/com/xyxb/backend/common/tool/apiApp/Test.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="114">
-          <caret line="6" column="50" selection-start-line="6" selection-start-column="50" selection-end-line="6" selection-end-column="50" />
+        <state relative-caret-position="304">
+          <caret line="16" lean-forward="true" selection-start-line="16" selection-end-line="16" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/xyxb/backend/common/tool/apiApp/YapiApp.java">
+    <entry file="jar://$MAVEN_REPOSITORY$/cn/hutool/hutool-all/4.6.0/hutool-all-4.6.0.jar!/cn/hutool/core/util/ArrayUtil.class" />
+    <entry file="jar://$MAVEN_REPOSITORY$/cn/hutool/hutool-all/4.6.0/hutool-all-4.6.0.jar!/cn/hutool/http/HttpRequest.class" />
+    <entry file="jar://$MAVEN_REPOSITORY$/cn/hutool/hutool-all/5.0.7/hutool-all-5.0.7.jar!/cn/hutool/http/HttpBase.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1911">
-          <caret line="276" column="49" selection-start-line="276" selection-start-column="49" selection-end-line="276" selection-end-column="49" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="162">
+          <caret line="118" column="52" selection-start-line="118" selection-start-column="13" selection-end-line="118" selection-end-column="52" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="234">
+          <caret line="14" column="26" selection-start-line="14" selection-start-column="26" selection-end-line="14" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/cn/hutool/hutool-all/5.0.7/hutool-all-5.0.7.jar!/cn/hutool/http/HttpUtil.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="114">
+          <caret line="37" column="13" selection-start-line="37" selection-start-column="13" selection-end-line="37" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/xyxb/backend/common/tool/showDocApp/HttpUtil.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="684">
+          <caret line="49" column="47" selection-start-line="49" selection-start-column="34" selection-end-line="49" selection-end-column="47" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/xyxb/backend/common/tool/apiApp/ApiInfo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="76">
+          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/xyxb/backend/common/tool/apiApp/HttpUtil.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="27" lean-forward="true" selection-start-line="27" selection-end-line="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/xyxb/backend/common/tool/apiFile/demo.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="15" column="34" selection-start-line="15" selection-start-column="34" selection-end-line="15" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/xyxb/backend/common/tool/apiFile/login.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="147">
+          <caret line="13" column="67" lean-forward="true" selection-start-line="13" selection-start-column="16" selection-end-line="13" selection-end-column="67" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/xyxb/backend/common/tool/showDocApp/Doc.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="171">
+          <caret line="49" column="47" selection-start-line="49" selection-start-column="47" selection-end-line="49" selection-end-column="47" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/xyxb/backend/common/tool/apiApp/ApiJsonTool.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="242">
-          <caret line="346" column="51" lean-forward="true" selection-start-line="346" selection-start-column="51" selection-end-line="346" selection-end-column="51" />
+        <state relative-caret-position="167">
+          <caret line="143" column="35" selection-start-line="143" selection-start-column="35" selection-end-line="143" selection-end-column="35" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="method#toYapiReqBody#0;class#ApiJsonTool#0" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/xyxb/backend/common/tool/apiApp/demo.xml">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/xyxb/backend/common/tool/apiApp/Api.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="426">
-          <caret line="25" column="29" lean-forward="true" selection-start-line="25" selection-start-column="29" selection-end-line="25" selection-end-column="29" />
+        <state relative-caret-position="19">
+          <caret line="2" column="18" selection-start-line="2" selection-start-column="18" selection-end-line="2" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/xyxb/backend/common/tool/apiFile/aaa.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="437">
+          <caret line="23" column="23" selection-start-line="23" selection-start-column="23" selection-end-line="23" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/xyxb/backend/common/tool/showDocApp/ShowDocTool.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2204">
+          <caret line="123" column="5" lean-forward="true" selection-start-line="123" selection-start-column="5" selection-end-line="123" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/xyxb/backend/common/tool/apiFile/productInfo.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="190">
+          <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/xyxb/backend/common/tool/apiApp/YapiApp.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="304">
+          <caret line="16" column="20" lean-forward="true" selection-start-line="16" selection-start-column="20" selection-end-line="16" selection-end-column="20" />
         </state>
       </provider>
     </entry>

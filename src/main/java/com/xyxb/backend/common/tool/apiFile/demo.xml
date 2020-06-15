@@ -6,7 +6,7 @@
             <path>/liveTicket/add2?a</path><!-- 请求路径 -->
             <title>测</title><!-- 标题 -->
             <uid>11</uid><!-- 更新人，这里11 -->
-            <tag>5</tag><!-- 版本 这里会记录 最多10个 tag 版本迭代 -->
+            <tag>xxx</tag><!-- 版本 这里会记录 最多10个 tag 版本迭代 -->
             <reqHeaders><!-- 请求参数头 "()" 里面是需要填写的参数描述 -->
                 {"aaa(测-aaa)":123,"bbb(测-bbb)":345}
             </reqHeaders>

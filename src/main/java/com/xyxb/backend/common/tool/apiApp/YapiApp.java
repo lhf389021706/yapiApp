@@ -3,24 +3,25 @@ package com.xyxb.backend.common.tool.apiApp;
 import cn.hutool.http.HttpRequest;
 import cn.hutool.log.Log;
 import cn.hutool.log.LogFactory;
+import com.alibaba.fastjson.JSON;
 import com.alibaba.fastjson.JSONArray;
 import com.alibaba.fastjson.JSONObject;
+import com.alibaba.fastjson.serializer.SerializerFeature;
+import com.xyxb.backend.common.tool.showDocApp.Doc;
+import com.xyxb.backend.common.tool.showDocApp.ShowDocTool;
 import org.dom4j.Document;
 import org.dom4j.DocumentException;
 import org.dom4j.Element;
 import org.dom4j.io.SAXReader;
 
 import java.io.File;
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Optional;
+import java.util.*;
 
 public class YapiApp {
 
     private static int PROJECT_ID;//项目ID,这里不需要填写
-    private static final String HOST ="http://localhost:3000";//填写你得服务地址
-    private static final String TOKEN ="8e086d7cb05f4738293174e3cdc5bae1c7108cd50da25d5b0464b2f9008fa250";//填写你的项目token
+    private static        String HOST ="http://192.168.0.205:3001";//填写你得服务地址
+    private static        String TOKEN ="08a0bda571694b8deb376847cc3fc45f9d3c4cb0a082e02e7c4beb3e551e3278";//填写你的项目token
 
     private static final String SAVE_OR_UPDATE_API =HOST+"/api/interface/save?token="+TOKEN;//新增或修改API
     private static final String PROJECT_INFO =HOST+"/api/project/get?token="+TOKEN;//获取项目信息
@@ -32,9 +33,11 @@ public class YapiApp {
 
     private static final Log log = LogFactory.get();
 
-    public YapiApp(){
+    public YapiApp(String host,String token){
         try {
             PROJECT_ID =  getProject();
+            HOST = host;
+            TOKEN = token;
         } catch (Exception e) {
             e.printStackTrace();
         }
@@ -113,15 +116,26 @@ public class YapiApp {
 
     //检查是否存在目录,如果不存在会执行新增操作
     public JSONObject checkCat(String name,String desc) throws Exception {
-        JSONObject o = getCatMenu();
-        List<JSONObject> array = JSONArray.parseArray(o.getJSONArray("data").toString(),JSONObject.class);
+        //String[] names = name.split("/");
+        String[] names =new String[]{name};//暂时不支持多级目录
 
-        Optional<JSONObject> json = array.stream().filter(item -> item.getString("name").equals(name)).findFirst();
-        if(json.isPresent()){
-            return json.get();
-        }else{
-            return addCat(name,desc);
+        String parentId ="-1";
+        JSONObject lastObj = new JSONObject();
+        for(int i=0;i<names.length;i++){
+            JSONObject o = getCatMenu();
+            List<JSONObject> array = JSONArray.parseArray(o.getJSONArray("data").toString(),JSONObject.class);
+
+            final int itmemI= i;
+            Optional<JSONObject> json = array.stream().filter(item -> item.getString("name").equals(names[itmemI])).findFirst();
+            if(json.isPresent()){
+                lastObj = json.get();
+                parentId = lastObj.getString("_id");
+            }else{
+                lastObj = addCat(parentId,names[itmemI],desc);
+                parentId = lastObj.getString("_id");
+            }
         }
+        return lastObj;
     }
 
     //检查参数同步,参数以线上的为准
@@ -209,10 +223,11 @@ public class YapiApp {
     }
 
     //新增分类目录
-    public JSONObject addCat(String name,String desc) throws Exception{
+    public JSONObject addCat(String parentId,String name,String desc) throws Exception{
         try{
             HashMap<String, Object> paramMap = new HashMap<>();
             paramMap.put("project_id", PROJECT_ID);
+            paramMap.put("parent_id",parentId);
             paramMap.put("desc",desc);
             paramMap.put("name",name);
 
@@ -256,6 +271,9 @@ public class YapiApp {
     //更新单个文件API
     public void saveOrUpdate(File xmlfile){
         ApiInfo apiInfo;
+        if(xmlfile.getName().indexOf("aaa")==-1){
+            return;
+        }
         try {
             apiInfo = analysis(xmlfile,PROJECT_ID);
 
@@ -288,7 +306,24 @@ public class YapiApp {
 
                 JSONObject object = JSONObject.parseObject(result2);
                 if(object.getInteger("errcode")==0){
-                    System.out.println("更新Api成功！");
+                    log.info("更新Yapi成功！");
+                    log.info("更新至showdoc....");
+                    Doc doc = new Doc();
+                    doc.setCatName(apiInfo.getName());
+                    doc.setTitle(api.getTitle());
+
+                    doc.setParamDesc(ApiJsonTool.getResJSON(api.getReqQuery()));
+                    doc.setResultDesc(ApiJsonTool.getResJSON(api.getResBody()));
+
+                    String content = JSON.toJSONString(JSONObject.parseObject(api.getResBody()), SerializerFeature.PrettyFormat, SerializerFeature.WriteMapNullValue,
+                            SerializerFeature.WriteDateUseDateFormat);
+                    doc.setResultDemo(content);
+
+                    doc.setUrl(api.getPath());
+                    doc.setDesc(api.getDesc());
+                    doc.setMethod(api.getMethod());
+
+                    ShowDocTool.saveApi(doc);
                 }else{
                     log.error("更新Api失败！"+api.getTitle()+":"+api.getPath());
                 }
@@ -405,8 +440,10 @@ public class YapiApp {
         String filePath = ApiInfo.class.getResource("").getPath();//获取当前类的相对路径
         filePath = filePath.replace("target/classes","src/main/java");//class 路径转换为 文件的路径
 
-        YapiApp app = new YapiApp();
-        app.saveOrUpdate(filePath);
+        YapiApp app = new YapiApp(HOST,TOKEN);
+        File file = new File(filePath);
+
+        app.saveOrUpdate(file.getParent()+"/apiFile");
     }
 
 }

@@ -34,8 +34,7 @@ public class ApiJsonTool {
         pjson.put("method", api.getMethod());
         pjson.put("_id", api.getId());
         pjson.put("project_id", api.getProjectId());
-
-        pjson.put("tag", new String[]{api.getTag()});
+        pjson.put("tag",Arrays.asList(api.getTag()));
 
         pjson.put("add_time", api.getAddTime());
 
@@ -135,6 +134,25 @@ public class ApiJsonTool {
         toYapiReqBody(rsMap, rspObj);
         System.out.println(rspObj.toJSONString());
         return new JSONObject(rspObj);
+    }
+
+    /**
+     * 组装请求参数体
+     * @param json
+     * @return
+     */
+    public static Map<String,Object> getResJSON(String json) {
+        JSONObject tagObject = JSONObject.parseObject(json);
+        Map<Integer, String> addrMap = new HashMap<>();
+        if(tagObject==null){
+            return new HashMap<>();
+        }
+        addrMap.put(tagObject.hashCode(), "");
+
+        LinkedHashMap rsMap = new LinkedHashMap();
+        analysisJson(rsMap, tagObject.hashCode(), 0, addrMap, tagObject);
+
+        return rsMap;
     }
 
     private static int countString(String str,String s) {
@@ -332,10 +350,10 @@ public class ApiJsonTool {
             }
             jsonObject.put("description", description);
 
-            if ("true".equals(value.toString().trim()) || "false".equals(value.toString().trim())) {
-                jsonObject.put("type", "boolean");
-            } else if (value instanceof JSONObject || value == null) {
+            if (value instanceof JSONObject || value == null) {
                 jsonObject.put("type", "object");
+            } else if ("true".equals(value.toString().trim()) || "false".equals(value.toString().trim())) {
+                jsonObject.put("type", "boolean");
             } else if ( value instanceof JSONArray ) {
                 jsonObject.put("type", "array");
             } else if (isInteger(value.toString()) || "[1]".equals(value.toString())) { //如果index位置的字符是数字  返回true

@@ -1,0 +1,38 @@
+<ApiInfo>
+    <desc>系统管理</desc><!-- 文件夹介绍 -->
+    <name>系统管理</name><!-- 文件夹名称 如果不存在会自动创建 -->
+    <apis>
+        <api>
+            <path>/sys/login</path>
+            <title>登录</title>
+            <uid>11</uid>
+            <tag></tag>
+            <reqHeaders>
+
+            </reqHeaders>
+            <reqQuery>
+                {"username(用户名)":"admin","password(密码)":"xyxb2019"}
+            </reqQuery>
+            <reqBodyForm>
+                {"body1(!测-aaa)":123,"body2(测-bbb)":345}
+            </reqBodyForm>
+            <reqBodyOther>
+
+            </reqBodyOther>
+            <resBody>
+                {
+                    "ccc(用话ID|notNull,ltEq5,gtEq5)":{
+                        "ccc-1(测ccc-1)":[
+                            {
+                                "a":false,
+                                "b":[{"b-1":"a"}]
+                            }
+                        ],
+                        "ccc-2":"1792318200684396.8"
+                    }
+                }
+            </resBody>
+            <method>POST</method>
+        </api>
+    </apis>
+</ApiInfo>
